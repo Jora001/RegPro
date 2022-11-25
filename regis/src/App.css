@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+input[type=text], input[type=password], input[type=email],input[type=phone] {
+  width: 95%;
+  padding: 20px;
+  margin: 1px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+h3{
+  color: red;
+  
+}
+p{
+  color: #04AA6D;
+}
+button{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
