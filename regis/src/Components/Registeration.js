@@ -42,14 +42,14 @@ function Registration() {
   return (
     <>
  
-        <div className="form">
+        <div>
           {" "}
           {login ? (
             <form onSubmit={handleFormSubmit}>
               <h3>Register</h3>
 
               <div className="form-group">
-                <label >Name</label>
+                <label>*</label>
                 <input
                   type="text"
                   className="form-control"
@@ -60,7 +60,7 @@ function Registration() {
               </div>
 
               <div className="form-group">
-                <label>Email </label>
+                <label>*</label>
                 <input
                   type="email"
                   className="form-control"
@@ -70,7 +70,7 @@ function Registration() {
               </div>
 
               <div className="form-group">
-                <label>Passw</label>
+                <label>*</label>
                 <input
                   type="password"
                   className="form-control"
@@ -80,7 +80,7 @@ function Registration() {
               </div>
 
               <div className="form-group">
-                <label>Phone</label>
+                <label>*</label>
                 <input
                   type="Phone"
                   className="form-control"
@@ -89,7 +89,7 @@ function Registration() {
                 />
               </div>
 
-              {/* <div className="form-group">
+              <div className="form-group">
                 <label>Choose your Profession</label>
                 <Form.Control
                   as="select"
@@ -101,15 +101,15 @@ function Registration() {
                   <option>Team Player</option>
                   <option>Full Stack</option>
                 </Form.Control>
-              </div> */}
+              </div>
 
-              <button type="submit" className="btn btn-dark btn-lg btn-block">
+              <button  type="submit" className="btn btn-dark btn-lg btn-block">
                 Register
               </button>
-              <p onClick={handleClick} className="forgot-password text-right">
-                Already registered{" "}log in?
+              <button onClick={handleClick} className="forgot-password text-right">
+                {" "}Log in?
                 
-              </p>
+             </button>
               {flag && (
                 <Alert color="primary" variant="danger">
                   I got it you are in hurry! But every Field is important!
