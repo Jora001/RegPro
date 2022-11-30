@@ -2,15 +2,16 @@ import React from "react";
 
 function Home() {
   const  Name = JSON.parse( localStorage.getItem("user"));
+  const handleClick = () =>{
+    
+    window.location.reload()
+    
+   }
   return (
     <>
-    <p className="text-center">Welcome - {Name}.name</p>
-      <h1>Login Successfully</h1>
-      <div>HELLO WORLD</div>
-      <h1>HELLO ARMENIA</h1>
-
+    
+      <button className="btnbtn" onClick={handleClick}>Logout</button>
      
-
     </>
   );
 }

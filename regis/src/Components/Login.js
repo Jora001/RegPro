@@ -43,6 +43,7 @@ function Login() {
               onChange={(event) => setEmaillog(event.target.value)}
             />
           </div>
+          localStorage.setItem("loogedin",true)
 
           <div className="form-group">
             <label>Password</label>
@@ -51,6 +52,9 @@ function Login() {
               className="form-control"
               placeholder="Enter password"
               onChange={(event) => setPasswordlog(event.target.value)}
+              
+
+              
             />
           </div>
 
@@ -63,6 +67,7 @@ function Login() {
               Fill correct Info else keep trying.
             </Alert>
           )}
+          
         </form>
       ) : (
         <Home />

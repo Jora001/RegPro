@@ -96,9 +96,9 @@ function Registration() {
                   onChange={(event) => setProfession(event.target.value)}
                 >
                   <option>Select</option>
-                  <option>Artist</option>
+                  <option>Programmer</option>
                   <option>Photographer</option>
-                  <option>Team Player</option>
+                  <option>Ingener</option>
                   <option>Full Stack</option>
                 </Form.Control>
               </div>
